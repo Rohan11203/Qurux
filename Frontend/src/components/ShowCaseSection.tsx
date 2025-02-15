@@ -1,5 +1,5 @@
 import { Avatar } from "@mui/material";
-
+import { motion } from "framer-motion";
 export const ShowCaseSection = () => {
   return (
     <div className="bg-[#fff7f5] p-4">
@@ -14,7 +14,17 @@ export const ShowCaseSection = () => {
         </div>
 
         {/* Content Section */}
-        <div className="p-4 text-center flex flex-col items-center justify-center flex-1">
+        <motion.div 
+        initial={{ x: "-100%" }} // Start from left
+        animate={{ x: "100%" }} // Move to right
+        exit={{ x: "-100%" }} // Hide again to the left
+        transition={{
+          repeat: Infinity,
+          repeatType: "reverse",
+          duration: 10,
+          ease: "easeInOut",
+        }}
+        className="p-4 text-center flex flex-col items-center justify-center flex-1">
           <Avatar />
           <h2 className="text-2xl font-lora mt-2">Mac Caffe</h2>
           <p className="text-xl text-[#f8b1b0] tracking-wide font-lora">
@@ -25,7 +35,7 @@ export const ShowCaseSection = () => {
             numquam deserunt quasi, exercitationem provident maiores quisquam
             tenetur ipsa ipsam.
           </p>
-        </div>
+        </motion.div>
 
         {/* Third Div */}
         <div className=""></div>

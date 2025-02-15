@@ -1,8 +1,14 @@
 import { Card } from "./Card";
-
+import { motion } from "framer-motion";
 export const CardSection = () => {
   return (
-    <div className="grid bg-white grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+    <motion.div
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeIn" }}
+      viewport={{ once: true }}
+      className="grid bg-white grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5"
+    >
       <Card
         varient="green"
         ImageBackGround="white"
@@ -38,6 +44,6 @@ export const CardSection = () => {
         description="Etiam Sed diam blandit, congue tortor in eleifend metus aenean"
         ImageLink="https://kinforce.net/qurux/wp-content/uploads/2021/05/elements-70-plastic-surgery-elements-5MGUA28_Buttock_augmentation.png"
       />
-    </div>
+    </motion.div>
   );
 };

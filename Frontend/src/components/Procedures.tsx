@@ -1,12 +1,18 @@
 import { ArrowIcon } from "../Icons/ArrowIcon";
 import { Button } from "./Button";
+import { motion } from "framer-motion";
 
 export const Procedures = () => {
   return (
     <div className="px-6 py-10 bg-white">
     <div className="flex flex-col lg:flex-row justify-between items-center">
       
-      <div className="w-full lg:w-[40%] p-10 flex flex-col gap-2 text-center lg:text-left">
+      <motion.div
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: true }}
+      className="w-full lg:w-[40%] p-10 flex flex-col gap-2 text-center lg:text-left">
         <h2 className="text-4xl font-grechen text-[#f8b1b0]">Procedures</h2>
         <h1 className="text-4xl font-lora">Most Popular Procedures</h1>
         <p className="font-light pt-4">
@@ -37,9 +43,14 @@ export const Procedures = () => {
         </div>
   
         <Button varient="primary" size="md" title="Know more" className="mt-6 mx-auto lg:mx-0" />
-      </div>
+      </motion.div>
   
-      <div className="flex flex-col sm:flex-row gap-6 pt-10 lg:pt-0">
+      <motion.div 
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "circInOut" }}
+      viewport={{ once: true }}
+      className="flex flex-col sm:flex-row gap-6 pt-10 lg:pt-0">
         <div className="sm:pt-10">
           <img
             className="w-full  h-auto rounded-lg"
@@ -52,7 +63,7 @@ export const Procedures = () => {
             src="https://kinforce.net/qurux/wp-content/uploads/2021/05/undergoing-skin-resurfacing-procedure-MUN2XTD.jpg"
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   </div>
   
