@@ -2,7 +2,7 @@ import { Card } from "./Card";
 
 export const CardSection = () => {
   return (
-    <div className="flex">
+    <div className="grid bg-white grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
       <Card
         varient="green"
         ImageBackGround="white"
@@ -17,7 +17,6 @@ export const CardSection = () => {
         description="Etiam Sed diam blandit, congue tortor in eleifend metus aenean"
         ImageLink="https://kinforce.net/qurux/wp-content/uploads/2021/05/elements-70-plastic-surgery-elements-5MGUA28_Breast_augmentation.png"
       />
-
       <Card
         varient="yellow"
         ImageBackGround="white"
@@ -25,7 +24,6 @@ export const CardSection = () => {
         description="Etiam Sed diam blandit, congue tortor in eleifend metus aenean"
         ImageLink="https://kinforce.net/qurux/wp-content/uploads/2021/05/elements-70-plastic-surgery-elements-5MGUA28_Nose_surgery.png"
       />
-
       <Card
         varient="red"
         ImageBackGround="red"
@@ -33,7 +31,6 @@ export const CardSection = () => {
         description="Etiam Sed diam blandit, congue tortor in eleifend metus aenean"
         ImageLink="https://kinforce.net/qurux/wp-content/uploads/2021/05/elements-70-plastic-surgery-elements-5MGUA28_Surgery_point.png"
       />
-
       <Card
         varient="blue"
         ImageBackGround="white"

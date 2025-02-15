@@ -24,7 +24,7 @@ const ImageBackGroundStyles = {
 
 export const Card = (props: CardProps) => {
   return (
-    <div className={`${VarientStyles[props.varient]} relative flex flex-col  p-12 justify-center items-center max-w-lg border-b`}>
+    <div className={`${VarientStyles[props.varient]} relative flex flex-col  p-12 justify-center items-center max-w-lg border md:boder-b`}>
         <div className="absolute top-0 left-0  scale-y-[-1] scale-x-[-1]">
         <img 
             src="https://kinforce.net/qurux/wp-content/uploads/2021/05/elements-set-of-natural-and-floral-elements-G9XCU6B_violet.png" 
