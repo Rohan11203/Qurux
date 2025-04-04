@@ -12,7 +12,7 @@ const Size = {
 };
 
 const VarientStyles = {
-  primary: "bg-[#f8b1b0] hover:bg-[#fbd1d0]",
+  primary: "bg-[var(--secondary-color)] hover:bg-[#fbd1d0]",
   green: "bg-[#bcd69b] hover:bg-[#f6fbef] hover:text-[#bcd69b]",
   purple: "bg-[#e4aed1] hover:bg-white hover:text-[#e4aed1]",
   yellow: "bg-[#efdba2] hover:bg-[#fcf8ec] hover:text-[#efdba2]",

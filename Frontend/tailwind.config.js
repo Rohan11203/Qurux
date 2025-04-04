@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      textColor:{
+        green:{
+          100: "#F8F8F2"
+        },
+      },
       fontFamily:{
         grechen: ["Grechen Fuemen", "serif"],
         lora: ["Lora", "serif"],

@@ -15,15 +15,10 @@ export const ShowCaseSection = () => {
 
         {/* Content Section */}
         <motion.div 
-        initial={{ x: "-100%" }} // Start from left
-        animate={{ x: "100%" }} // Move to right
-        exit={{ x: "-100%" }} // Hide again to the left
-        transition={{
-          repeat: Infinity,
-          repeatType: "reverse",
-          duration: 10,
-          ease: "easeInOut",
-        }}
+       initial={{ opacity: 0, x: -50 }}
+       whileInView={{ opacity: 1, x: 0 }}
+       transition={{ duration: 0.6, ease: "easeInOut" }}
+       viewport={{ once: true }}
         className="p-4 text-center flex flex-col items-center justify-center flex-1">
           <Avatar />
           <h2 className="text-2xl font-lora mt-2">Mac Caffe</h2>
