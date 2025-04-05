@@ -4,3 +4,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+    --primary-color: #FCEDEA;
+    --secondary-color: #fbd1d0;  
+    /* --primary-color-dark: #B0B0A8; */
+    --primary-color-dark: #B0B0A8;
+  }
+  
