@@ -72,7 +72,7 @@ export const ServicesSection = () => {
 };
 
 // Individual Service Card Component
-const ServiceCard = ({ service, align }) => {
+const ServiceCard = ({ service, align }:any) => {
   return (
     <div className={`flex flex-col items-${align === "right" ? "end" : "start"} text-${align}`}>
       <div className="h-24 w-24 mb-3">
