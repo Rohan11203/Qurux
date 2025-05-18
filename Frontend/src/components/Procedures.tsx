@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 
 export const Procedures = () => {
   return (
-    <div className="px-6 py-10 bg-white">
+    <div
+    id="procedure"
+    className="px-6 py-10 bg-white">
     <div className="flex flex-col lg:flex-row justify-between items-center">
       
       <motion.div

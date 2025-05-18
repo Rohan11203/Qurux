@@ -6,12 +6,12 @@ import { Procedures } from "../components/Procedures";
 import { ShowCaseSection } from "../components/ShowCaseSection";
 import { ServicesSection } from "../components/ServicesSection";
 
+
 export const LandingPage = () => {
+  
   return (
-    <div className="h-screen w-full  bg-[var(--primary-color)]  overflow-x-hidden">
-      <div className="pt-10 ">
-        <Navbar />
-      </div>
+    <div className="h-full w-full  bg-[var(--primary-color)]  overflow-x-hidden">
+      <Navbar />
       <HeroSection />
       <AboutSection />
       <CardSection />

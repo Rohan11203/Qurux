@@ -2,7 +2,9 @@ import { Button } from "./Button";
 import { motion } from "framer-motion";
 export const AboutSection = () => {
   return (
-    <div className="bg-white sm:pt-20 pt-10 px-4">
+    <div
+    id="about"
+    className="bg-white sm:pt-20 pt-10 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center">
           <motion.div

@@ -34,7 +34,9 @@ export const ServicesSection = () => {
   ];
 
   return (
-    <div className="bg-white pt-20 pb-10">
+    <div
+    id="service"
+    className="bg-white pt-20 pb-10">
       {/* Section Title */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-semibold text-[#f8b1b0] font-grechen">Services</h2>
